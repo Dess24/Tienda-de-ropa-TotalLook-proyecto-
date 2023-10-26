@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: .9em;
+    line-height: 1.5;
+}
+
+header{
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    background-color: #750000;
+    z-index: 30;
+}
+
+.logo-menu_container{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container{
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.menu_hamburguesa{
+    height: 30px;
+    width: 30px;
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/menu_.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu_hamburguesa:hover{
+    cursor: pointer;
+}
+
+.navbar_links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.funciones_navbar{
+    display: flex;
+}
+
+
+.buscador_container{
+    padding: 0 50px;
+}
+
+
+.cuenta_icon{
+    height: 20px;
+    width: 20px;
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/usuario.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+.logo_container{
+    height: 50px;
+    width: 50px;
+    background: url(/proyectoprogramacion/imagenes/imagenesNavbar/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input_buscador_container{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid silver;
+    display: flex;
+}
+
+.buscador_image{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 5px;
+    top: 5px;
+}
+
+.buscador{
+    padding: 5px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 35px;
+    color: black;
+    outline: none;
+    
+}
+
+
+.navbar_links_container{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cuenta_container{
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cuenta_text input{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.cuenta_text input:hover{
+    cursor: pointer;
+}
+
+header p{
+    color: white;
+}
+
+.atras_icon{
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/volver.png);
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.hidden_space{
+    height: 85px;
+}
+
+
+main{
+    width: 100%;
+}
+
+
+.productos_container{
+    padding-top: 100px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos_inside{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+table *{
+    padding: 3px;
+}
+
+input{
+    border: 2px solid #000;
+    padding: 0 10px 0 10px;
+    min-height: 40px;
+    background-color: #750000;
+    color: #ffff;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+table tr th p{
+    font-size: 1.5em;
+
+}

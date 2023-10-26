@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: .9em;
+    line-height: 1.5;
+}
+
+header{
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    background-color: #750000;
+    z-index: 30;
+}
+
+.logo-menu_container{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container{
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.menu_hamburguesa{
+    height: 30px;
+    width: 30px;
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/menu_.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu_hamburguesa:hover{
+    cursor: pointer;
+}
+
+.navbar_links_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+
+.funciones_navbar{
+    display: flex;
+}
+
+
+.buscador_container{
+    padding: 0 50px;
+}
+
+
+.cuenta_icon{
+    height: 20px;
+    width: 20px;
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/usuario.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+.logo_container{
+    height: 50px;
+    width: 50px;
+    background: url(/proyectoprogramacion/imagenes/imagenesNavbar/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input_buscador_container{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid silver;
+    display: flex;
+}
+
+.buscador_image{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 5px;
+    top: 5px;
+}
+
+.buscador{
+    padding: 5px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 35px;
+    color: black;
+    outline: none;
+    
+}
+
+
+
+
+.cuenta_container{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cuenta_container2{
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cuenta_text input{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.cuenta_text input:hover{
+    cursor: pointer;
+}
+
+.carrito_container{
+    position: relative;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrito_icon{
+    height: 25px;
+    width: 25px;
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/shopping-bag.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.carrito_text input{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.carrito_text input:hover{
+    cursor: pointer;
+}
+
+header p{
+    color: white;
+}
+
+.atras_icon{
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/volver.png);
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+#menu_lateral{
+    display: none;
+}
+
+
+.container_menu_lateral{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+}
+
+.cont_menu_lateral{
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #4d0000;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+.cont_menu_lateral nav{
+    transform: translateY(15%);
+    padding-top: 20px;
+}
+
+.cont_menu_lateral nav input{
+    text-align: left;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont_menu_lateral nav input:hover{
+    border-left: 5px solid white;
+    background-color: #380000;
+}
+
+.exit{
+    background-image: url(/proyectoprogramacion/imagenes/imagenesNavbar/delete.png);
+    background-size: contain;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.logo_container2{
+    height: 50px;
+    width: 50px;
+    background: url(/proyectoprogramacion/imagenes/imagenesNavbar/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#menu_lateral:checked ~ .container_menu_lateral{
+    opacity: 100%;
+    visibility: visible;
+}
+
+
+#menu_lateral:checked ~ .container_menu_lateral .cont_menu_lateral{
+    transform: translateX(0%);
+}
+
+
+.hidden_space{
+    height: 85px;
+}
+
+
+
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.product_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+    border: 3px solid #380000;
+}
+
+.product_container:hover{
+    box-shadow: 5px 5px 50px 10px rgb(134, 134, 134);
+}
+
+.produc_inside{
+    position: relative;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produc_inside img{
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 2.5em;
+    border-bottom: 3px solid #380000;
+}
+
+p{
+    font-size: 1.5em;
+    border-bottom: 3px solid #380000;
+    width: 80px;
+}
+
+select{
+    border: 2px solid #000;
+    padding: 0 30px 0 10px;
+    min-height: 40px;
+    background-color: #ffff;
+    color: #000;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.buttons_container input{
+    border: 2px solid #000;
+    padding: 0 10px 0 10px;
+    min-height: 40px;
+    background-color: #380000;
+    color: #ffff;
+}
+
+.buttons_container{
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons_container input:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    background-color: #4d0000;
+}
